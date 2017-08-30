@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/formcss.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body data-spy="scroll" data-target=".menu">
+    <header>
+        <nav class="innerwidth">
+            <div id="logo">
+                <img src="images/logo.jpg" alt="my logo">
+            </div>
+            <div class="navbar">
+                <div class="burger-nav"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="for-mobile">
+                    <ul class="menu">
+                        <li><h5><a class="active" href="#toppage">ABOUT</a></h5></li>
+                        <li><h5><a href="#toPortfolio">PORTFOLIO</a></h5></li>
+                        <li><h5><a href="#toContact">CONTACT</a></h5></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="toppage" class="innerwidth">
+        <div class="infopanels about innerwidth">
+            <div class="aboutinfo">
+                <p>I am a front end web developer</p>
+                <p>Web Developer</p>
+            </div>
+            <div class="aboutimage"></div>
+        </div>
+        <div id="toPortfolio" class="portfolio innerwidth">
+            <h2>PORTFOLIO</h2>
+            <ul class="infopanels">
+                <li class="mywork one"><a href="https://clonevardy.herokuapp.com/vardy.html"></a></li>
+                <li class="mywork two"><a href="https://clonebbc.herokuapp.com/indexBBC.html"></a></li>
+                <li class="mywork three"><a href="https://coderjoe-codepen.herokuapp.com/CodePlayer.html"></a></li>
+                <li class="mywork four"><a href="https://coderjoe-reactiontester.herokuapp.com/reactionTester.html"></a></li>
+            </ul>
+        </div>
+        <div id="toContact" class="infopanels contactme innerwidth">       
+           <h2>CONTACT ME</h2>
+           <div id="formdiv">
+            <form method="get" action='#' id="signinform">
+              <div class="group">
+                    <input id="name" autocomplete="off" type="text" name="name" required />
+                    <label for="name">Name</label>
+                    <span class="bar"></span>
+                </div>
+                <div class="group">
+                    <input id="username" autocomplete="off" type="text" name="username" required />
+                    <label for="username">Email or username</label>
+                    <span class="bar"></span>
+                    <div class="errorbar"></div>
+                    <p class="errormess">Sorry, that username's too short. It needs to be at least two characters.</p>
+                    <p id="errormess2">Something's missing. Please check and try again.</p>
+                </div>
+                <div class="group">
+                    <input id="contactno" autocomplete="off" type="text" name="telephone" required />
+                    <label for="telephone">Contact Number</label>
+                    <span class="bar"></span>
+                </div>
+                <div class="group">
+                    <input id="message" autocomplete="off" type="text" name="message" required />
+                    <label for="message">Message</label>
+                    <span class="bar"></span>
+                </div>
+                <button type="submit" form="signinform" id="signin">SEND</button>
+            </form>
+            </div>
+            <div class="contactinfo"><p>Contact info goes here.</p></div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="generalinfo">
+             <div>
+                 <div class="fupperdivs">
+                  <h3>ABOUT THIS PAGE</h3>
+                  <p>Made by CoderJoe</p>
+                 </div>
+             </div>
+             <div  class="fupperdivs" id="mediaicons">
+                <h3>AROUND THE WEB</h3>  
+                 <ul>
+                    <li><a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                 </ul>
+             </div>     
+        </div>
+        <div class="lowerfooter"><p>CoderJoe &copy; 2017. All Rights Reserved</p>
+        </div>
+        <a href="" id="returnToTop"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>

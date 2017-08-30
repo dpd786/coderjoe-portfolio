@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #eee;
+    outline: 0;
+    outline: none;
+    border-style: hidden;
+}
+body {
+    background: #277;
+    position: relative;
+    min-width: 300px;
+}
+.innerwidth {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header {
+    background: purple;
+    height: 70px;
+    line-height: 70px;
+    font-size: 110%;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.active {
+    background: #eee;
+    color: #666 !important;
+}
+#logo {
+    float: left;
+    padding-left: 15px;
+}
+.burger-nav {
+    display: none;
+}
+.navbar {
+    float: right;
+    padding-right: 5px;
+}
+.navbar li {
+    float: left;
+}
+.navbar li a {
+    text-decoration: none;
+    padding: 13px 20px;
+    color: #888;
+}
+.navbar li a:hover {
+    box-shadow: 0 0 3px #4d004d;
+    color: #666;
+}
+header:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+main {
+    font-size: 160%;
+    padding-top: 70px;
+}
+.about {
+    padding: 6% 5% 4%;
+    background: #266;
+}
+.aboutinfo {
+    float: left;
+}
+.aboutimage {
+    float: right;
+    background: url(../images/clonevardy.jpg) center no-repeat;
+    width: 400px;
+    height: 190px;
+}
+.about:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.portfolio {
+    background: #466;
+    padding: 4% 0;
+}
+.portfolio h2 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 3% 0 2%;
+}
+.mywork {
+    float: left;
+    text-align: center;
+    width: 40%;
+    margin: 1% 5%;
+    height: 190px;
+}
+.mywork a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.mywork.one {
+    background: url(../images/clonevardy.jpg) center no-repeat;
+}
+.mywork.two {
+    background: url(../images/cloneBBC.jpg) center no-repeat;
+}
+.mywork.three {
+    background: url(../images/coderJoeIDE.jpg) center no-repeat;
+}
+.mywork.four {
+    background: url(../images/reactionTest.jpg) center no-repeat;
+}
+.portfolio:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.contactme {
+    background: #266;
+    padding: 4% 2% 4%;
+}
+.contactme h2 {
+    text-align: center;
+    padding: 3% 0 4%;
+}
+.contactinfo p {
+    padding: 20px 0 0 40px;
+}
+#formdiv, .contactinfo {
+    float: left;
+    width: 50%;
+}
+
+/*
+.contactme group {
+    display: block;
+    margin: 3% 0 0;
+    position: relative;
+}
+input, textarea {
+    display: inline-block;
+    background: #266;
+    border-bottom: 1px solid #ccc;
+    width: 90%;
+    margin-bottom: 10px;
+}
+input {
+    height: 40px;
+}
+textarea {
+    resize: none;
+}
+label {
+    position: absolute;
+    pointer-events: none;
+    transition: 0.5s ease all;
+    left: 0;
+    width: 90%;
+}
+input:focus ~ label {
+    font-size: 60%;
+    top: -20px;
+}
+textarea:focus ~ label {
+    font-size: 60%;
+    top: -25px;
+}
+#sending button {
+    background: purple;
+    border: 1px solid #222;
+    border-radius: 10%;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+*/
+.contactme:after {
+    content: "";
+    display: block;
+    clear: both;
+} 
+
+.generalinfo {
+    background: #aaa;
+    font-size: 140%;
+    height: 200px;
+}
+.generalinfo > div {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding-top: 4%;
+}
+.generalinfo:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#mediaicons li {
+    border: 1px solid purple;
+    border-radius: 50%;
+    list-style: none;
+    display: inline-block;
+}
+#mediaicons li a {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    transition: 0.5s all;
+}
+.fupperdivs h3 {
+    margin-bottom: 10px;
+}
+#mediaicons a:hover {
+    background: purple;
+}
+.lowerfooter {
+    background: purple;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+
+/*MEDIA QUERIES */
+/****************/
+
+@media screen and (max-width: 1022px) {
+    #logo {
+        padding-left: 40px;
+    }
+    .navbar {
+        padding-right: 40px;
+    }
+    .mywork {
+        float: none;
+        width: 500px;
+        height: 236px;
+        margin: 4% auto;
+        text-align: center;
+    }
+    .mywork.one {
+        background: url(../images/clonevardyT.jpg) center no-repeat;
+    }
+    .mywork.two {
+        background: url(../images/cloneBBCT.jpg) center no-repeat;
+    }
+    .mywork.three {
+        background: url(../images/coderJoeIDET.jpg) center no-repeat;
+    }
+    .mywork.four {
+        background: url(../images/reactionTestT.jpg) center no-repeat;
+    }
+    .aboutinfo, .aboutimage {
+        display: block;
+        width: 100%;
+        margin: 2% auto;
+        text-align: center;
+    }
+
+    #formdiv, .contactinfo {
+        float: none;
+        display: block;
+        width: 80%;
+        padding-bottom: 4%;
+        margin: 0 auto;
+    }
+    .contactinfo:last-child {
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        position: relative;
+    }
+    .for-mobile {
+        border-top: 1px solid #000;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: purple;
+        width: 361px;
+        margin: 0 auto;
+        height: 0;
+        display: none;
+    }
+    .menu {
+        padding: 0 15px;
+    }
+    .burger-nav {
+        display: block;
+    }
+    .burger-nav i {
+        cursor: pointer;
+    }
+    .burger-nav i:hover {
+        color: #aaa;
+    }
+    .for-mobile.open {
+        height: 70px;
+        display: block;
+    }
+    .contactinfo p {
+        padding: 20px 0 0;
+    }
+    #returnToTop {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        display: none;
+    }
+
+    #returnToTop i {
+        font-size: 300%;
+        color: #afe;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        height: 40px;
+        line-height: 40px;
+        position: static;
+    }
+    #logo {
+        padding-left: 16px;
+    }
+    .navbar {
+        padding-right: 16px;
+    }
+    .burger-nav .fa-bars  {
+        font-size: 140%;
+        position: relative;
+        top: 4px;
+    }
+    .menu {
+        padding: 0;
+    }
+    main {
+        padding-top: 0;
+        font-size: 80%;
+    }
+    .for-mobile {        
+        width: 100%;
+        margin: 0;
+        font-size: 70%;
+    }
+    .for-mobile.open {
+        height: 38px;
+    }
+    .navbar li a {
+        width: 100px;
+        padding: 12px 26px;
+    }
+    .infopanels > div {
+        float: none;
+    }
+    .aboutinfo {
+        margin: 4% auto;
+    }
+    .aboutimage {
+        background: url(../images/clonevardyM.jpg) center no-repeat;
+        width: 250px;
+        height: 118px;
+    }
+    .mywork {
+        width: 250px;
+        height: 120px;
+    }
+    .mywork.one {
+        background: url(../images/clonevardyM.jpg) center no-repeat;
+    }
+    .mywork.two {
+        background: url(../images/cloneBBCM.jpg) center no-repeat;
+    }
+    .mywork.three {
+        background: url(../images/coderJoeIDEM.jpg) center no-repeat;
+    }
+    .mywork.four {
+        background: url(../images/reactionTestM.jpg) center no-repeat;
+    }
+    .group input,
+    .group label {
+        font-size: 16px;
+    }
+    .group input {
+        margin-top: 10px;
+        height: 36px;
+    }
+    input:focus ~ label,
+    input:valid ~ label {
+        top: -5px;
+        font-size: 12px;
+        opacity: 1;
+    }
+    .errorbar {
+        top: 33px;
+    }
+    .errormess:before {
+        top: 45%;
+    }
+    #errormess2:before {
+        top: 45%;
+    }
+    button {
+        font-size: 100%;
+    }
+    .generalinfo {
+        font-size: 70%;
+        height: 150px;
+        padding-top: 10px;
+    }
+    .generalinfo > div {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 4%;
+    }
+    #mediaicons li a {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        line-height: 30px;   
+    }
+    .lowerfooter {
+        height: 40px;
+        line-height: 40px;
+        font-size: 80%;
+    }
+    
+}
