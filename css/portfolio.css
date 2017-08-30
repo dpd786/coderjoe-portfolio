@@ -279,6 +279,9 @@ textarea:focus ~ label {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        position: static;
+    }
     nav {
         position: relative;
     }
@@ -312,6 +315,9 @@ textarea:focus ~ label {
     .contactinfo p {
         padding: 20px 0 0;
     }
+    main {
+        padding: 0;
+    }
     #returnToTop {
         position: fixed;
         bottom: 10px;
@@ -329,7 +335,6 @@ textarea:focus ~ label {
     header {
         height: 40px;
         line-height: 40px;
-        position: static;
     }
     #logo {
         padding-left: 16px;
@@ -346,7 +351,6 @@ textarea:focus ~ label {
         padding: 0;
     }
     main {
-        padding-top: 0;
         font-size: 80%;
     }
     .for-mobile {        
