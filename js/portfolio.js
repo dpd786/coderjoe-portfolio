@@ -42,7 +42,7 @@ $(document).ready(function () {
         //var $prevscroll, $scrollpos = //$("body").scrollTop();
         
         if ($(this).scrollTop() >= 50) {
-            $('#returnToTop').fadeIn(200);
+            $('#returnToTop').css("display", "block !important").fadeIn(200);
         } else {
             $('#returnToTop').fadeOut(200);
         }
