@@ -72,6 +72,7 @@ main {
 }
 .aboutinfo {
     float: left;
+    width: 50%;
 }
 .aboutimage {
     float: right;
@@ -366,6 +367,17 @@ textarea:focus ~ label {
     }
     .mywork.four {
         background: url(../images/reactionTest.jpg) center no-repeat;
+    }
+    #mediaicons li a {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+    }
+     #mediaicons li i {
+        font-size: 90%;
+    }
+    .generalinfo h3 {
+        font-size: 110%;
     }
 }
 
