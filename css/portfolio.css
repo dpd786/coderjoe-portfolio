@@ -229,6 +229,8 @@ textarea:focus ~ label {
     line-height: 70px;
 }
 
+
+
 /*MEDIA QUERIES */
 /****************/
 
@@ -281,6 +283,8 @@ textarea:focus ~ label {
 @media screen and (max-width: 768px) {
     header {
         position: static;
+        height: 50px;
+        line-height: 50px;
     }
     nav {
         position: relative;
@@ -291,7 +295,7 @@ textarea:focus ~ label {
         left: 0;
         right: 0;
         background-color: purple;
-        width: 361px;
+        max-width: 380px;
         margin: 0 auto;
         height: 0;
         display: none;
@@ -299,18 +303,36 @@ textarea:focus ~ label {
     .menu {
         padding: 0 15px;
     }
+    .menu li {
+        line-height: 40px;
+        margin: 0 2px;
+    }
+    .menu li a {
+        padding: 9px 20px;
+    }
     .burger-nav {
         display: block;
     }
     .burger-nav i {
         cursor: pointer;
+        position: relative;
+        top: 5px;
     }
     .burger-nav i:hover {
         color: #aaa;
     }
     .for-mobile.open {
-        height: 70px;
+        height: 40px;
         display: block;
+    }
+    
+    .generalinfo {
+        font-size: 120%;
+        height: 150px;
+        padding-top: 10px;
+    }
+    .generalinfo ul {
+        font-size: 140%;
     }
     .contactinfo p {
         padding: 20px 0 0;
@@ -318,21 +340,36 @@ textarea:focus ~ label {
     main {
         padding: 0;
     }
-    #returnToTop {
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-        display: none;
-        text-decoration: none;
-    }
 
-    #returnToTop i {
-        font-size: 300%;
-        color: #afe;
+    .lowerfooter {
+        height: 40px;
+        line-height: 40px;
+    }
+    h2 {
+        font-size: 120%;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 530px) {
+    .mywork {
+        width: 400px;
+        height: 190px;
+    }
+    .mywork.one {
+        background: url(../images/clonevardy.jpg) center no-repeat;
+    }
+    .mywork.two {
+        background: url(../images/cloneBBC.jpg) center no-repeat;
+    }
+    .mywork.three {
+        background: url(../images/coderJoeIDE.jpg) center no-repeat;
+    }
+    .mywork.four {
+        background: url(../images/reactionTest.jpg) center no-repeat;
+    }
+}
+
+@media screen and (max-width: 425px) {
     header {
         height: 40px;
         line-height: 40px;
@@ -350,21 +387,34 @@ textarea:focus ~ label {
     }
     .menu {
         padding: 0;
+        height: 120px;
+        position: relative;
     }
     main {
         font-size: 80%;
     }
-    .for-mobile {        
-        width: 100%;
+    .for-mobile { 
+        max-width: 100px;
         margin: 0;
         font-size: 70%;
     }
     .for-mobile.open {
-        height: 38px;
+        height: 120px;
+    }
+    .navbar li {
+        margin: 0;
+        width: 100px;
+        float: none;
+        display: block;
+    }
+    .navbar h5 {
+        text-align: center;
     }
     .navbar li a {
         width: 100px;
-        padding: 12px 26px;
+        text-align: center;
+        margin: 2px 0;
+        padding: 9px 15px;
     }
     .infopanels > div {
         float: none;
