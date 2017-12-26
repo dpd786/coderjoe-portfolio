@@ -118,6 +118,12 @@ main {
 .mywork.four {
     background: url(../images/reactionTest.jpg) center no-repeat;
 }
+.mywork.five {
+    background: url(../images/wiki.jpg) top no-repeat;
+}
+.mywork.six {
+    background: url(../images/weather.JPG) top no-repeat;
+}
 .portfolio:after {
     content: "";
     display: block;
