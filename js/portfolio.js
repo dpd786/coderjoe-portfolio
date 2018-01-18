@@ -3,7 +3,7 @@ $(document).ready(function () {
         $(this).next("label").css("top", "-30px");
     });
     
-
+    
    // Add smooth scrolling to all links
     $(".menu a").on('click', function (event) {
 
@@ -38,6 +38,25 @@ $(document).ready(function () {
         $(".for-mobile").toggleClass('open');
     });
     
+    //Header show on scroll up on mobile
+    var $scrolled, $prevScroll = 0;
+    
+    if (($('header').outerHeight() <= 50) && $('body').outerWidth() <= 768) {
+        $(window).scroll(function () {
+            $scrolled = document.body.scrollTop || document.documentElement.scrollTop;
+            
+            if (($scrolled - $prevScroll) < -50) {
+                $('header').css("position", "fixed");
+            } else if (($scrolled - $prevScroll) > 50) {
+                $('header').css("position", "relative");
+            }
+            
+            $prevScroll = $scrolled;
+        });
+    } else if ($('body').outerWidth() > 768) {
+        $('header').css("position", "fixed");
+    }
+    /*
     $(window).scroll(function () {
         //var $prevscroll, $scrollpos = //$("body").scrollTop();
         
@@ -56,5 +75,6 @@ $(document).ready(function () {
             scrollTop: 0
         }, 500);
     });
+    */
     
 });

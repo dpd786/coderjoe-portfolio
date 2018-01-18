@@ -289,7 +289,7 @@ textarea:focus ~ label {
 
 @media screen and (max-width: 768px) {
     header {
-        position: static;
+        position: relative;
         height: 50px;
         line-height: 50px;
     }
